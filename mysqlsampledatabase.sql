@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3307
--- Generation Time: Aug 08, 2016 at 09:10 AM
+-- Generation Time: Aug 08, 2016 at 09:13 AM
 -- Server version: 5.5.42
 -- PHP Version: 7.0.0
 
@@ -49,6 +49,7 @@ INSERT INTO `customers` (`customerNumber`, `customerName`, `contactLastName`, `c
 (114, 'Australian Collectors, Co.', 'Ferguson', 'Peter', '03 9520 4555', '636 St Kilda Road', 'Level 3', 'Melbourne', 'Victoria', '3004', 'Australia', 1611, '117300.00'),
 (119, 'La Rochelle Gifts', 'Labrune', 'Janine ', '40.67.8555', '67, rue des Cinquante Otages', NULL, 'Nantes', NULL, '44000', 'France', 1370, '118200.00'),
 (121, 'Baane Mini Imports', 'Bergulfsen', 'Jonas ', '07-98 9555', 'Erling Skakkes gate 78', NULL, 'Stavern', NULL, '4110', 'Norway', 1504, '81700.00'),
+(123, '123asdasd', '123dasdas', '', '', '', NULL, '', NULL, NULL, '', NULL, NULL),
 (124, 'Mini Gifts Distributors Ltd.', 'Nelson', 'Susan', '4155551450', '5677 Strong St.', NULL, 'San Rafael', 'CA', '97562', 'USA', 1165, '210500.00'),
 (125, 'Havel & Zbyszek Co', 'Piestrzeniewicz', 'Zbyszek ', '(26) 642-7555', 'ul. Filtrowa 68', NULL, 'Warszawa', NULL, '01-012', 'Poland', NULL, '0.00'),
 (128, 'Blauer See Auto, Co.', 'Keitel', 'Roland', '+49 69 66 90 2555', 'Lyonerstr. 34', NULL, 'Frankfurt', NULL, '60528', 'Germany', 1504, '59700.00'),
@@ -4062,18 +4063,6 @@ INSERT INTO `products` (`productCode`, `productName`, `productLine`, `productSca
 ('S72_1253', 'Boeing X-32A JSF', 'Planes', '1:72', 'Motor City Art Classics', '10" Wingspan with retractable landing gears.Comes with pilot', 4857, '32.77', '49.66'),
 ('S72_3212', 'Pont Yacht', 'Ships', '1:72', 'Unimax Art Galleries', 'Measures 38 inches Long x 33 3/4 inches High. Includes a stand.\r\nMany extras including rigging, long boats, pilot house, anchors, etc. Comes with 2 masts, all square-rigged', 414, '33.30', '54.60');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `Student`
---
-
-CREATE TABLE `Student` (
-  `id` int(11) NOT NULL,
-  `name` text NOT NULL,
-  `age` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 --
 -- Indexes for dumped tables
 --
@@ -4131,12 +4120,6 @@ ALTER TABLE `productlines`
 ALTER TABLE `products`
   ADD PRIMARY KEY (`productCode`),
   ADD KEY `productLine` (`productLine`);
-
---
--- Indexes for table `Student`
---
-ALTER TABLE `Student`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Constraints for dumped tables
